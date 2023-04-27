@@ -2,7 +2,7 @@
 
 This project is a responsive Contact Us form that allows users to make inquiries by providing their name, email, subject, and message. The form is built using React, Chakra UI, and several other packages that enhance its functionality and user experience.
 
-[View Live Demo](https://your-live-demo-link.com)
+[View Live Demo at this link](https://serene-sunflower-6c6f6f.netlify.app/)
 
 ![Contact Us Form Screenshot](./contactme.png)
 
@@ -22,7 +22,7 @@ This project is a responsive Contact Us form that allows users to make inquiries
 2. Optionally, provide a subject for your inquiry.
 3. Click the "Submit" button to send your inquiry.
 4. Upon successful submission, a green message will appear at the top of the form.
-5. If there's an error during submission, a red error message will be displayed at the top of the form.
+5. If there's an error during submission, a red error message will be displayed at the top of the form.(best demonstrated if the api endpoint is tweaked)
 
 ## Packages Used
 
