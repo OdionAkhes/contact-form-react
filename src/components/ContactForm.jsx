@@ -19,8 +19,8 @@ import { nanoid } from "nanoid";
 
 
 const ContactForm = () => {
-  const [statusMessage, setStatusMessage] = React.useState(null);
-  const [statusType, setStatusType] = React.useState(null);
+  const [statusMessage, setStatusMessage] = React.useState("");
+  const [statusType, setStatusType] = React.useState("");
 
 
   const formik = useFormik({
@@ -49,6 +49,14 @@ const ContactForm = () => {
         actions.resetForm();
         setStatusMessage("Form submitted successfully");
         setStatusType("success");
+        setTimeout(()=>{
+          setStatusMessage("Form submitted successfully");
+          setStatusType("success"); 
+          setTimeout(()=>{
+            setStatusMessage("");
+            setStatusType(""); 
+          }, 10000) //either clear the message or add an exit button for your user to clear
+        })
       } catch (error) {
         setStatusMessage("An error occurred while submitting the form");
         setStatusType("error");
